@@ -29,8 +29,8 @@ import YouTubeEmbed from 'yt-custom-player';
 const App = () => {
   return (
     <div>
-      <h1>Minha aplicação com o player do YouTube estilizado</h1>
-      <YouTubeEmbed videoId="dQw4w9WgXcQ" start={"43"} end={"101"}/>
+      <h1>Hello, world!</h1>
+      <YouTubeEmbed videoId="dQw4w9WgXcQ" start={43} end={101} />
     </div>
   );
 };
