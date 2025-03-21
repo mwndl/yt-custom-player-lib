@@ -6,21 +6,21 @@ import Controls from './Controls/index';
 
 const YouTubeEmbed = ({
   videoId,
-  start,
-  end,
-  autoplay,
-  muted,
-  repeat,
-  showInicialOverlay,
-  showPlayPauseBtn,
-  showStopBtn,
-  showMuteBtn,
-  showProgressBar,
-  aspectRatio,
-  fullScreen,
-  live,
-  action,
-  onTimestampUpdate, // adicionando prop para o callback do timestamp
+  start = 0,
+  end = 0,
+  autoplay = false,
+  muted = false,
+  repeat = false,
+  showInicialOverlay = true,
+  showPlayPauseBtn = true,
+  showStopBtn = false,
+  showMuteBtn = true,
+  showProgressBar = true,
+  aspectRatio = "16:9",
+  fullScreen = true,
+  live = false,
+  action = null,
+  onTimestampUpdate = null,
 }) => {
 
   // caso o CMS forneça autoplay true e muted false, o navegador não deixará o vídeo ser reproduzido
