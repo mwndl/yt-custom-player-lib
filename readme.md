@@ -24,13 +24,13 @@ Implemente e use o componente `Player` no seu projeto React.
 
 ```jsx
 import React from 'react';
-import Player from 'yt-custom-player';
+import YouTubeEmbed from 'yt-custom-player';
 
 const App = () => {
   return (
     <div>
       <h1>Minha aplicação com o player do YouTube estilizado</h1>
-      <Player videoId="abc123" />
+      <YouTubeEmbed videoId="dQw4w9WgXcQ" start={"43"} end={"101"}/>
     </div>
   );
 };
