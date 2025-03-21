@@ -41,25 +41,22 @@ export default App;
 
 ## Propriedades
 
-Aqui você pode listar as propriedades que seu componente suporta.
+Essas são as propriedades suportadas pela biblioteca.
 
-| Propriedade  | Tipo   | Descrição                                              | Padrão |
-|--------------|--------|--------------------------------------------------------|--------|
-| videoId      | string | O ID do vídeo do YouTube a ser exibido.               | null   |
-| autoplay     | bool   | Se o vídeo deve iniciar automaticamente.              | false  |
-| controls     | bool   | Se os controles do player devem ser exibidos.         | true   |
-| theme        | string | Define o tema (ex: 'dark', 'light').                  | light  |
-
-## Customização
-
-Você pode personalizar o estilo do player usando CSS. Exemplo:
-
-```css
-.yt-custom-player {
-  border-radius: 8px;
-  overflow: hidden;
-}
-```
+| Propriedade        | Tipo    | Descrição                                                     | Padrão  |
+|--------------------|---------|---------------------------------------------------------------|---------|
+| videoId            | string  | O ID do vídeo do YouTube a ser exibido.                       | null    |
+| start              | number  | O tempo inicial em segundos para iniciar a reprodução do vídeo.| 0       |
+| end                | number  | O tempo final em segundos para parar a reprodução do vídeo.    | 0       |
+| autoplay           | bool    | Se o vídeo deve iniciar automaticamente.                      | false   |
+| muted              | bool    | Se o vídeo deve ser reproduzido sem som.                       | false   |
+| repeat             | bool    | Se o vídeo deve ser repetido automaticamente após o término.   | false   |
+| showInicialOverlay | bool    | Se a sobreposição inicial deve ser exibida.                    | true    |
+| showPlayPauseBtn   | bool    | Se o botão de play/pause deve ser exibido.                     | true    |
+| showMuteBtn        | bool    | Se o botão de mute/desmutar deve ser exibido.                  | true    |
+| showProgressBar    | bool    | Se a barra de progresso do vídeo deve ser exibida.             | true    |
+| aspectRatio        | string  | Define a proporção do player (ex: '16:9', '4:3').             | '16:9'  |
+| fullScreen         | bool    | Se o modo de tela cheia deve estar habilitado.                 | true    |
 
 ## Contribuição
 
