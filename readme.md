@@ -1,26 +1,26 @@
 # yt-custom-player
 
-> Uma biblioteca para estilizar e personalizar o player do YouTube no React.
+> A library for styling and customizing the YouTube player in React.
 
-## Instalação
+## Installation
 
-Para instalar a biblioteca, use o npm ou yarn:
+To install the library, use npm or yarn:
 
 ```bash
 npm install yt-custom-player
 ```
 
-ou
+or
 
 ```bash
 yarn add yt-custom-player
 ```
 
-## Uso
+## Usage
 
-Implemente e use o componente `Player` no seu projeto React.
+Implement and use the `YouTubeEmbed` component in your React project.
 
-### Exemplo básico
+### Basic example
 
 ```jsx
 import React from 'react';
@@ -39,35 +39,65 @@ export default App;
 ```
 
 
-## Propriedades
+## Properties
 
-Essas são as propriedades suportadas pela biblioteca.
+These are the properties supported by the library.
 
-| Propriedade        | Tipo    | Descrição                                                     | Padrão  |
+| Property           | Type    | Description                                                   | Default |
 |--------------------|---------|---------------------------------------------------------------|---------|
-| videoId            | string  | O ID do vídeo do YouTube a ser exibido.                       | null    |
-| start              | number  | O tempo inicial em segundos para iniciar a reprodução do vídeo.| 0       |
-| end                | number  | O tempo final em segundos para parar a reprodução do vídeo.    | 0       |
-| autoplay           | bool    | Se o vídeo deve iniciar automaticamente.                      | false   |
-| muted              | bool    | Se o vídeo deve ser reproduzido sem som.                       | false   |
-| repeat             | bool    | Se o vídeo deve ser repetido automaticamente após o término.   | false   |
-| showInicialOverlay | bool    | Se a sobreposição inicial deve ser exibida.                    | true    |
-| showPlayPauseBtn   | bool    | Se o botão de play/pause deve ser exibido.                     | true    |
-| showMuteBtn        | bool    | Se o botão de mute/desmutar deve ser exibido.                  | true    |
-| showProgressBar    | bool    | Se a barra de progresso do vídeo deve ser exibida.             | true    |
-| aspectRatio        | string  | Define a proporção do player (ex: '16:9', '4:3').             | '16:9'  |
-| fullScreen         | bool    | Se o modo de tela cheia deve estar habilitado.                 | true    |
+| videoId            | string  | The YouTube video ID to be displayed.                         | null    |
+| start              | number  | The start time in seconds to begin video playback.            | 0       |
+| end                | number  | The end time in seconds to stop video playback.               | 0       |
+| autoplay           | bool    | Whether the video should start automatically.                  | false   |
+| muted              | bool    | Whether the video should play without sound.                   | false   |
+| repeat             | bool    | Whether the video should repeat automatically after ending.    | false   |
+| showInicialOverlay | bool    | Whether the initial overlay should be displayed.              | true    |
+| showPlayPauseBtn   | bool    | Whether the play/pause button should be displayed.            | true    |
+| showMuteBtn        | bool    | Whether the mute/unmute button should be displayed.           | true    |
+| showProgressBar    | bool    | Whether the video progress bar should be displayed.           | true    |
+| aspectRatio        | string  | Defines the aspect ratio of the player (e.g., '16:9', '4:3'). | '16:9'  |
+| fullScreen         | bool    | Whether the fullscreen mode should be enabled.                | true    |
 
-## Contribuição
 
-Se você deseja contribuir com a biblioteca, fique à vontade para fazer um fork e enviar pull requests. Certifique-se de seguir as boas práticas de codificação e de incluir testes sempre que possível.
+## Contribution
 
-1. Faça um fork deste repositório.
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
-3. Faça commit das suas mudanças (`git commit -am 'Adiciona nova feature'`).
-4. Envie para o repositório remoto (`git push origin feature/nova-feature`).
-5. Abra um pull request.
+If you'd like to contribute to the library, feel free to fork it and submit pull requests. Be sure to follow good coding practices and include tests whenever possible.
 
-## Licença
+1. **Fork this repository.**
+   
+   - Go to the repository page on GitHub and click the "Fork" button in the top right corner.
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE disponível no repositório para mais detalhes.
+2. **Create a branch for your feature.**
+   
+   - Open the terminal and navigate to the repository directory.
+   - Run the command to create a new branch:
+     ```bash
+     git checkout -b feature/new-feature
+     ```
+
+3. **Commit your changes.**
+   
+   - After making the desired changes to the code, add the changes to the staging area:
+     ```bash
+     git add .
+     ```
+   - Commit your changes:
+     ```bash
+     git commit -am 'Add new feature'
+     ```
+
+4. **Push to the remote repository.**
+   
+   - Push your branch to the remote repository:
+     ```bash
+     git push origin feature/new-feature
+     ```
+
+5. **Open a pull request.**
+   
+   - Go to the repository on GitHub, and you will see a button to open a pull request (PR) for your branch.
+   - Click on "Compare & pull request" and add a detailed description of your changes.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file available in the repository for more details.
