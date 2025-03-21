@@ -70,4 +70,4 @@ Se você deseja contribuir com a biblioteca, fique à vontade para fazer um fork
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE disponível no repositório para mais detalhes.
