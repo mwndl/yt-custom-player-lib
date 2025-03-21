@@ -1,7 +1,7 @@
 {
   "name": "yt-custom-player",
-  "version": "1.0.0",
-  "description": "Uma biblioteca para estilizar o player do YouTube",
+  "version": "1.0.1",
+  "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -19,7 +19,6 @@
   },
   "author": "Marcos Wiendl",
   "license": "MIT",
-  "description": "",
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
