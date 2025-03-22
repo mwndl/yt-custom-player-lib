@@ -495,27 +495,9 @@ YouTubeEmbed.propTypes = {
   showPlayPauseBtn: PropTypes.bool,
   showMuteBtn: PropTypes.bool,
   aspectRatio: PropTypes.string,
-  thumbnailUrl: PropTypes.string.isRequired,
   fullScreen: PropTypes.bool,
   live: PropTypes.bool,
   action: PropTypes.string,
-};
-
-YouTubeEmbed.defaultProps = {
-  start: 0,
-  end: 0,
-  autoplay: false,
-  muted: false,
-  repeat: false,
-  showInicialOverlay: true,
-  showPlayPauseBtn: true,
-  showMuteBtn: true,
-  showProgressBar: true,
-  aspectRatio: "16:9",
-  fullScreen: true,
-  live: false,
-  action: null,
-  onTimestampUpdate: null,
 };
 
 export default YouTubeEmbed;
