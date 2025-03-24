@@ -1,0 +1,36 @@
+.yt-video-container {
+  position: relative;
+  width: 100%;
+  height: 0; /* Altura inicial em 0 */
+  padding-bottom: 56.25%; /* Default para 16:9 */
+  overflow: hidden;
+  user-select: none;
+}
+
+.video {
+  position: absolute;
+  top: -200px; /* Move o iframe 50px para cima */
+  left: 0;
+  width: 100%;
+  height: calc(100% + 400px); /* Aumenta a altura em 50px para cima e 50px para baixo */
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 5;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}

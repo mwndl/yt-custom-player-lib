@@ -1,0 +1,12 @@
+.live-icon {
+    width: clamp(20px, 2vw, 32px);
+    height: auto;
+  }
+
+  .live-icon-top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red; /* Altere a cor ou o estilo conforme necessário */
+    z-index: 101; /* Garantir que o ícone sobreponha outros elementos */
+  }

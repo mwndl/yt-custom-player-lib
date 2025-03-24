@@ -1,0 +1,37 @@
+.muteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volumeControl {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.volumeSliderContainer {
+  position: absolute;
+  bottom: 140%;
+  right: 50%;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 200;
+}
+
+.volumeSliderContainer.visible {
+  opacity: 1;
+}
+
+.volumeSlider {
+  display: block;
+  background: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

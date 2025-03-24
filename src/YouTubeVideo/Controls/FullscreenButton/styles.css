@@ -1,0 +1,16 @@
+.fullscreen {
+    display: flex;
+}
+
+.fullscreen-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.fullscreen-button:hover {
+    color: #ddd;
+}
