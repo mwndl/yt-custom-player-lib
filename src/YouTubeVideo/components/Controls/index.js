@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import PlayPauseButton from './PlayPauseButton';
 import StopButton from './StopButton';

@@ -3,14 +3,14 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: './src/YouTubeVideo/index.js',
-  mode: 'development',
+  mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     library: 'YtCustomPlayer',
     libraryTarget: 'umd',
     globalObject: 'this',
-    libraryExport: 'default', // permite importar sem precisar desestruturar
+    libraryExport: 'default',
   },
   module: {
     rules: [
@@ -23,16 +23,21 @@ module.exports = {
       },
       {
         test: /\.css$/, // suporta .css
-        use: ['style-loader', 'css-loader'], // carrega os arquivos CSS no JavaScript
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
-  
   resolve: {
     extensions: ['.js', '.jsx'], // facilita a importação sem precisar da extensão
   },
   optimization: {
     minimize: true, // gera uma versão otimizada da lib
   },
-  externals: [nodeExternals()],
+  externals: [
+    nodeExternals(),  // Isso impede que dependências como o React sejam incluídas no bundle final
+    {
+      react: 'react', 
+      'react-dom': 'react-dom',
+    },
+  ],
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { FaStop } from 'react-icons/fa';
 import styles from './StopButton.module.css'; // Importa o CSS Module

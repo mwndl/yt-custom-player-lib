@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { FaPlay, FaPause } from 'react-icons/fa';
 import './styles.css'

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
 import { Box, Slider, Stack } from '@mui/material';
